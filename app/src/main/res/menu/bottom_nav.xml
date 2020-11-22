@@ -12,14 +12,14 @@
         android:title="Gallery" />
 
     <item
-        android:id="@+id/navigation_notices"
-        android:icon="@drawable/ic_notice"
-        android:title="Notice" />
-
-    <item
         android:id="@+id/navigation_faculty"
         android:icon="@drawable/ic_group"
         android:title="Faculty" />
+
+    <item
+        android:id="@+id/navigation_notices"
+        android:icon="@drawable/ic_notice"
+        android:title="Notice" />
 
     <item
         android:id="@+id/navigation_aboutUs"
