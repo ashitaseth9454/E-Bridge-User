@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "340200190345",
+    "firebase_url": "https://e-bridge-glau.firebaseio.com",
+    "project_id": "e-bridge-glau",
+    "storage_bucket": "e-bridge-glau.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340200190345:android:e55a8b79c77847b6bf3158",
+        "android_client_info": {
+          "package_name": "com.example.e_bridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340200190345-2g5mpjkcikp29ghqfnmt077tatm0pi37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi6qaIY9U7woAZ8nylSB7xaXofg5MUH1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340200190345-2g5mpjkcikp29ghqfnmt077tatm0pi37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340200190345:android:2628bad6f63aa278bf3158",
+        "android_client_info": {
+          "package_name": "com.example.e_bridgeuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340200190345-2g5mpjkcikp29ghqfnmt077tatm0pi37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi6qaIY9U7woAZ8nylSB7xaXofg5MUH1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340200190345-2g5mpjkcikp29ghqfnmt077tatm0pi37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/home_layout"
 
     tools:context="com.example.e_bridgeuser.ui.home.HomeFragment">
 
@@ -20,6 +21,251 @@
                 android:id="@+id/slider"
                 android:layout_width="match_parent"
                 android:layout_height="300dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/latobold"
+                android:text="About GLA"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/latobold"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/aboutQuote"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size3" />
+            <!-- about us data stored in string and we used layout_centerHorizontal vali line to center_verticletak to aligh text-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/latoregular"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/aboutCollege"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/textColor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/latobold"
+                        android:text="Departments"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/title_size2" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Theme.MaterialComponents.Light">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/latolight"
+                                android:text="B Tech"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size1" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/GreyColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/latolight"
+                                android:text="BCA "
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size1" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/GreyColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/latolight"
+                                android:text="B Ed."
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size1" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/GreyColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/latolight"
+                                android:text="BA/LLB"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size1" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/GreyColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/latolight"
+                                android:text="BBA"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size1" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/GreyColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/latolight"
+                                android:text="MBA"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size1" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/GreyColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/latolight"
+                                android:text="M Tech"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size1" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/GreyColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/latolight"
+                                android:text="Ph. D"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/title_size1" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/GreyColor" />
+
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/latobold"
+                    android:text="Contact Details"
+                    android:textSize="@dimen/title_size2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/latobold"
+                    android:text="Address: 17km Stone, NH-2, Mathura-Delhi Road P.O. Chaumuhan, Mathura-281 406 (U.P.)"
+                    android:textSize="@dimen/text_size1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/latobold"
+                    android:text="+91-5662-250900, 250909, 241489,
++91-9927064017"
+                    android:textSize="@dimen/text_size1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/latobold"
+                    android:text="Email: glauniversity@gla.ac.in"
+
+                    android:textSize="@dimen/text_size1" />
+
+
+            </LinearLayout>
 
 
         </LinearLayout>

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
@@ -17,6 +18,7 @@ public class HomeFragment extends Fragment {
 
     SliderLayout slider;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -25,7 +27,7 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         slider = view.findViewById(R.id.slider);
         slider.setIndicatorAnimation(IndicatorAnimations.COLOR);
-        slider.setSliderTransformAnimation(SliderAnimations.CUBEINDEPTHTRANSFORMATION);
+        slider.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
         slider.setScrollTimeInSec(2);
 
 
@@ -64,6 +66,9 @@ public class HomeFragment extends Fragment {
 
             }
             //settingimage scale
+            defaultSliderView.setImageScaleType(ImageView.ScaleType.CENTER_CROP);
+
+            slider.addSliderView(defaultSliderView);
 
         }
 
