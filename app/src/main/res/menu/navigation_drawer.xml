@@ -9,10 +9,10 @@
     <item
         android:id="@+id/ebook"
         android:icon="@drawable/ic_ebook"
-        android:title="Website" />
+        android:title="E-Book" />
 
     <item
         android:id="@+id/developers"
         android:icon="@drawable/ic_developers"
-        android:title="Website" />
+        android:title="Developers" />
 </menu>
