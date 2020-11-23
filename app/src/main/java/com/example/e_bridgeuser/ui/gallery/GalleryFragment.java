@@ -48,7 +48,7 @@ public class GalleryFragment extends Fragment {
 
     private void getOtherImage() {
 
-        reference.child("Other Events").addValueEventListener(new ValueEventListener() {
+        reference.child("Webinar").addValueEventListener(new ValueEventListener() {
 
             ArrayList<String> imageList = new ArrayList<>();
 
@@ -74,7 +74,7 @@ public class GalleryFragment extends Fragment {
 
     private void getConvoImage() {
 
-        reference.child("Convocation").addValueEventListener(new ValueEventListener() {
+        reference.child("Cultural Event").addValueEventListener(new ValueEventListener() {
 
             ArrayList<String> imageList = new ArrayList<>();
 
