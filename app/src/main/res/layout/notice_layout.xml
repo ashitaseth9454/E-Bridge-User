@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    style="@style/Theme.MaterialComponents.Light"
     android:layout_height="wrap_content">
 
     <LinearLayout
@@ -19,7 +20,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_facultyImage" />
+                android:src="@drawable/ic_fac" />
 
 
             <LinearLayout
@@ -81,7 +82,7 @@
 
 
         <TextView
-            android:id="@+id/deleteNoticeTitle"
+            android:id="@+id/noticeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/text_margin"
@@ -90,7 +91,7 @@
             android:textSize="17sp" />
 
         <ImageView
-            android:id="@+id/deleteNoticeImage"
+            android:id="@+id/noticeImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitXY" />

@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.NoticeViewAdapter> {
     Context context;
     ArrayList<NoticeData> list;
-    private NoticeData item;
+   // private NoticeData item;
 
     public NoticeAdapter(Context context, ArrayList<NoticeData> list) {
         this.context = context;
@@ -29,7 +29,7 @@ public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.NoticeView
     @NonNull
     @Override
     public NoticeViewAdapter onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.notice_layout, parent, false);
+        View view = (View) LayoutInflater.from(context).inflate(R.layout.notice_layout, parent, false);
         return new NoticeViewAdapter(view);
 
     }
@@ -37,12 +37,12 @@ public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.NoticeView
     @Override
     public void onBindViewHolder(@NonNull NoticeViewAdapter holder, final int position) {
         final NoticeData item = list.get(position);
-        holder.deleteNoticeTitle.setText(item.getTitle());
+        holder.noticeTitle.setText(item.getTitle());
         holder.time.setText(item.getTime());
         holder.date.setText(item.getDate());
         try {
             if (item.getImage() != null)
-                Picasso.get().load(item.getImage()).into(holder.deleteNoticeImage);
+                Picasso.get().load(item.getImage()).into(holder.noticeImage);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -57,16 +57,16 @@ public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.NoticeView
 
     public class NoticeViewAdapter extends RecyclerView.ViewHolder {
 
-        TextView deleteNoticeTitle, date, time;
-        ImageView deleteNoticeImage;
+        TextView noticeTitle, date, time;
+        ImageView noticeImage;
 
 
         public NoticeViewAdapter(@NonNull View itemView) {
             super(itemView);
             date = itemView.findViewById(R.id.date);
             time = itemView.findViewById(R.id.time);
-            deleteNoticeTitle = itemView.findViewById(R.id.deleteNoticeTitle);
-            deleteNoticeImage = itemView.findViewById(R.id.deleteNoticeImage);
+            noticeTitle = itemView.findViewById(R.id.noticeTitle);
+            noticeImage = itemView.findViewById(R.id.noticeImage);
         }
     }
 
