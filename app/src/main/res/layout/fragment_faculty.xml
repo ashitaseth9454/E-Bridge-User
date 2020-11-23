@@ -36,8 +36,6 @@
                 android:layout_height="wrap_content"
                 android:nestedScrollingEnabled="false"
                 android:visibility="gone">
-
-                <include layout="@layout/faculty_data_layout"></include>
             </androidx.recyclerview.widget.RecyclerView>
 
             <!--iske andar nahi chahiey scrolling-->
@@ -45,8 +43,6 @@
                 android:id="@+id/cseNoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-
                 android:orientation="vertical">
 
                 <include layout="@layout/no_data_found" />

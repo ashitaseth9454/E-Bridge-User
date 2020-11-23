@@ -1,6 +1,7 @@
 package com.example.e_bridgeuser.ui.faculty;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,8 +60,14 @@ public class FacultyAdapter extends RecyclerView.Adapter<FacultyAdapter.FacultyV
                 intent.putExtra("key", item.getKey());
                 intent.putExtra("category", category);
                 context.startActivity(intent);*/
+                String[] str = new String[]{item.getEmail().toString()};
+                Intent email = new Intent(Intent.ACTION_SEND);
+                email.putExtra(Intent.EXTRA_EMAIL, str);
+                email.putExtra(Intent.EXTRA_SUBJECT, "Doubt via E-Bridge GLAU");
+                email.setType("message/rfc822");
+                context.startActivity(email, null);
 
-                Toast.makeText(context, "Update Faculty", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, item.getEmail().toString(), Toast.LENGTH_SHORT).show();
             }
         });
 
