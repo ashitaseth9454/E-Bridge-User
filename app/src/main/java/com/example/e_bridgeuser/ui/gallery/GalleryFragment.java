@@ -48,6 +48,7 @@ public class GalleryFragment extends Fragment {
 
     private void getOtherImage() {
 
+
         reference.child("Webinar").addValueEventListener(new ValueEventListener() {
 
             ArrayList<String> imageList = new ArrayList<>();

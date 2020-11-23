@@ -16,6 +16,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.e_bridgeuser.ebook.EbookActivity;
+import com.example.e_bridgeuser.website.WebsiteActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -64,24 +65,23 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.website) {
-            Toast.makeText(this, "Website", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), WebsiteActivity.class);
+            startActivity(intent);
+            // Toast.makeText(this, "Website", Toast.LENGTH_SHORT).show();
 
         } else if (item.getItemId() == R.id.developers) {
             Toast.makeText(this, "Developer", Toast.LENGTH_SHORT).show();
 
 
-        } else {
-            item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-                @Override
-                public boolean onMenuItemClick(MenuItem item) {
-                    Intent intent = new Intent(getApplicationContext(), EbookActivity.class);
-                    startActivity(intent);
-                    return true;
-                }
-            });
-            Toast.makeText(this, "Ebook", Toast.LENGTH_SHORT).show();
+        } else if (item.getItemId() == R.id.ebook) {
+            Intent intent = new Intent(getApplicationContext(), EbookActivity.class);
+            startActivity(intent);
 
+        } else {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
         }
+        //Toast.makeText(this, "Ebook", Toast.LENGTH_SHORT).show();
 
 
         return true;
