@@ -37,6 +37,7 @@ public class FacultyFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_faculty, container, false);
+
         cseDept = (RecyclerView) view.findViewById(R.id.cseDept);
         meDept = (RecyclerView) view.findViewById(R.id.meDept);
         eceDept = (RecyclerView) view.findViewById(R.id.eceDept);

@@ -6,14 +6,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
         android:orientation="vertical"
+        android:layout_margin="4dp"
         android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:gravity="center_vertical"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -31,7 +31,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Notice"
+                    android:text="College App"
                     android:textColor="@color/textColor"
                     android:textSize="18dp" />
 
@@ -43,8 +43,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@string/light"
                         android:text="Date : "
+                        android:fontFamily="@string/light"
                         android:textColor="@color/textColor"
                         android:textSize="@dimen/text_size1" />
 
@@ -52,17 +52,17 @@
                         android:id="@+id/date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@string/light"
                         android:text="15 aug 2020"
+                        android:fontFamily="@string/light"
                         android:textColor="@color/textColor"
                         android:textSize="@dimen/text_size1" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Time : "
                         android:layout_marginLeft="@dimen/text_margin"
                         android:fontFamily="@string/light"
-                        android:text="Time : "
                         android:textColor="@color/textColor"
                         android:textSize="@dimen/text_size1" />
 
@@ -70,8 +70,8 @@
                         android:id="@+id/time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@string/light"
                         android:text="12:00 "
+                        android:fontFamily="@string/light"
                         android:textColor="@color/textColor"
                         android:textSize="@dimen/text_size1" />
                 </LinearLayout>
@@ -84,9 +84,9 @@
             android:id="@+id/deleteNoticeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/text_margin"
-            android:text="Data"
+            android:text="xyxtfhfhfghyhfggf"
             android:textColor="@color/textColor"
+            android:layout_marginVertical="@dimen/text_margin"
             android:textSize="17sp" />
 
         <ImageView
