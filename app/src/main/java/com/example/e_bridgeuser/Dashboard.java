@@ -1,5 +1,6 @@
 package com.example.e_bridgeuser;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -14,6 +15,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.e_bridgeuser.ebook.EbookActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -69,6 +71,14 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
 
         } else {
+            item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    Intent intent = new Intent(getApplicationContext(), EbookActivity.class);
+                    startActivity(intent);
+                    return true;
+                }
+            });
             Toast.makeText(this, "Ebook", Toast.LENGTH_SHORT).show();
 
         }

@@ -1,22 +1,22 @@
 package com.example.e_bridgeuser.ebook;
 
 public class EbookData {
-    String name, pdfUrl;
+    String pdfTitle, pdfUrl;
 
     public EbookData() {
     }
 
     public EbookData(String name, String pdfUrl) {
-        this.name = name;
+        this.pdfTitle = name;
         this.pdfUrl = pdfUrl;
     }
 
-    public String getName() {
-        return name;
+    public String getPdfTitle() {
+        return pdfTitle;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPdfTitle(String name) {
+        this.pdfTitle = name;
     }
 
     public String getPdfUrl() {
