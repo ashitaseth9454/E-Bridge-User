@@ -1,8 +1,11 @@
 package com.example.e_bridgeuser;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +20,7 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        /*
+
         login=(Button)findViewById(R.id.login);
 
         signup=(Button)findViewById(R.id.signup);
@@ -51,6 +54,6 @@ public class SignupActivity extends AppCompatActivity {
             Toast.makeText(this, "Registered Sucessfully!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(),Dashboard.class);
             startActivity(intent);
-        }*/
+        }
     }
 }
