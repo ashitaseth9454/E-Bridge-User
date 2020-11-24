@@ -1,8 +1,11 @@
 package com.example.e_bridgeuser;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //connecting variables to their respective widget using id in activity main file
-      /*   login=(Button)findViewById(R.id.login);
+         login=(Button)findViewById(R.id.login);
       signup=(Button)findViewById(R.id.signup);
       username =(EditText)findViewById(R.id.username);
       password=(EditText)findViewById(R.id.password);
@@ -87,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             return false;
-        }  */
+        }
 
     }
 
