@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".developers.DeveloperActivity">
-    <!-- <LinearLayout
+     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -23,7 +23,7 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/ic_about"
+        android:src="@drawable/prakhar"
         android:layout_margin="10dp"
         />
         <TextView
@@ -82,5 +82,5 @@
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
-    </LinearLayout> -->
+    </LinearLayout>
 </ScrollView>
