@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -15,6 +14,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.e_bridgeuser.developers.DeveloperActivity;
 import com.example.e_bridgeuser.ebook.EbookActivity;
 import com.example.e_bridgeuser.website.WebsiteActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -70,7 +70,9 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             // Toast.makeText(this, "Website", Toast.LENGTH_SHORT).show();
 
         } else if (item.getItemId() == R.id.developers) {
-            Toast.makeText(this, "Developer", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), DeveloperActivity.class);
+            startActivity(intent);
+            //   Toast.makeText(this, "Developer", Toast.LENGTH_SHORT).show();
 
 
         } else if (item.getItemId() == R.id.ebook) {
